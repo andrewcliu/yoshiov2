@@ -11,13 +11,15 @@
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
+import router from '../router';
+
 
 Vue.use(TurbolinksAdapter)
 
+
 document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
-    el: '#app',
-    components: { App },
-    template:"<App/>"
-  })
+  	router,
+  	render: h => h(App),
+  }).$mount('#app')
 })
