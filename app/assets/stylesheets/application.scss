@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+*{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.business-name,.title{
+	font-family: 'Seaweed Script', cursive;
+}
+
+#appBody{
+	height:100vh;
+}
+.VueCarousel{
+	img{
+		width:100%;
+	}
+}
+#homeBg{
+	background-image:asset-url('dining_area.png');
+	background-size: cover;
+	background-position: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	height:100vh;
+	color:white;
+	.business-name{
+		font-size:8.5rem;
+	}
+	.business-name, p{
+		text-shadow: 1px 1px 1px #000;
+	}
+}
+#customNav{
+	box-shadow: 10px 0 5px -2px #888;
+	background-image:asset-url('long_wood.png');
+	background-repeat: repeat;
+	padding-left:25px;
+	.brand-logo img{
+		width:110%;
+		position: relative;
+		box-shadow: 4px 1px 5px #000;
+		margin:2rem 0 0 .2rem;
+		z-index: 999;
+	}
+	height:100vh;
+	.title{
+		color:white;
+		font-size:2rem;
+	}
+}
+
+#footer{
+	padding:25px;
+	background-color:#011;
+	
+}
+.rootView{
+	max-height:100vh;
+	min-height:100vh;
+	overflow:scroll;
+}
+.rootPadding{
+	padding:75px;
+	img{
+		width:100%;
+	}
+}
+.noPadding{
+	padding-right:0!important;padding-left:0!important;
+}
+.noMargin{
+	margin-left:0!important;
+	margin-right:0!important;
+	margin-bottom:0!important;
+}
+
+.btn{
+	background-color:black!important;
+	border-radius:2px!important;
+	color:#888!important;
+	box-shadow: 3px 1px 2px brown!important;
+	transition:all 150ms ease;
+}
+.btn:hover{
+	color:#FFF!important;
+}
