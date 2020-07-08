@@ -1,9 +1,9 @@
 <template>
   <div class='row noMargin'>
-  	<div class='col s1 noPadding'>
+  	<div class='col s2 m1 noPadding'>
 		   <Navbar />
 		</div>
-		<div class='col s11 noPadding rootView'>
+		<div class='col s10 m11 noPadding rootView'>
 			<router-view/>
 	   </div>
   </div>

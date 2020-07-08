@@ -12,9 +12,20 @@ import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
 import router from '../router';
-
-
 Vue.use(TurbolinksAdapter)
+import VueLazyload from 'vue-lazyload'
+
+Vue.use(VueLazyload)
+
+// or with options
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: 'dist/error.png',
+  loading: 'dist/loading.gif',
+  attempt: 1,
+  // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
+  listenEvents: [ 'mousewheel' ]
+})
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -22,4 +33,7 @@ document.addEventListener('turbolinks:load', () => {
   	router,
   	render: h => h(App),
   }).$mount('#app')
+
+
 })
+

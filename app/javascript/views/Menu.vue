@@ -1,7 +1,11 @@
 <template>
 	<div class='rootPadding'>
-		<!-- <h3 class="title center-align">Dining Menu</h3> -->
-	  <carousel :per-page="1" :mouse-drag="true">
+		<div class='row'>
+			<div class='col m4 offset-m4 woodBg col s8'>
+				<h3 class="title center-align">メニュー</h3>
+			</div>
+		</div>
+	  <carousel :per-page="2" :mouse-drag="true">
 	    <slide v-for="(n,index) in 16" :key="n">
 	      <img :src="require('menu/' + n + '.png')"/>
 	    </slide>

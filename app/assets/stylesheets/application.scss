@@ -15,9 +15,14 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 *{
 	font-family: 'Noto Sans TC', sans-serif;
+}
+body{
+	background-image:asset-url('arches.png');
+	background-repeat:repeat;
 }
 .business-name,.title{
 	font-family: 'Seaweed Script', cursive;
@@ -30,6 +35,14 @@
 	img{
 		width:100%;
 	}
+}
+.url-images{
+	transition: all 150ms ease;
+}
+.url-images:hover{
+	transform: scale(1.03);
+	border-radius:5px;
+	box-shadow:2px 1px 4px #888;
 }
 #homeBg{
 	background-image:asset-url('dining_area.png');
@@ -52,13 +65,17 @@
 	box-shadow: 10px 0 5px -2px #888;
 	background-image:asset-url('long_wood.png');
 	background-repeat: repeat;
-	padding-left:25px;
+	padding-left:10px;
 	.brand-logo img{
 		width:110%;
 		position: relative;
 		box-shadow: 4px 1px 5px #000;
 		margin:2rem 0 0 .2rem;
 		z-index: 999;
+	}
+	li .btn{
+		/*font-family: 'Kaushan Script', cursive;*/
+	  text-transform: capitalize;
 	}
 	height:100vh;
 	.title{
@@ -78,6 +95,17 @@
 	overflow:scroll;
 }
 .rootPadding{
+	min-height: 100vh;
+	.woodBg{
+		background-image:asset-url('yellow_wood.jpg');
+		background-repeat:repeat;
+		padding:25px;
+		border-radius:5px;
+		box-shadow: 5px 10px 13px #888;
+		.title{
+			font-weight:900;
+		}
+	}
 	padding:75px;
 	img{
 		width:100%;
@@ -93,12 +121,14 @@
 }
 
 .btn{
-	background-color:black!important;
 	border-radius:2px!important;
-	color:#888!important;
-	box-shadow: 3px 1px 2px brown!important;
+	/*background-image:asset-url('yellow_wood.jpg');*/
+	background-color:#011!important;
+	background-repeat:repeat;
+	color:white!important;
+	box-shadow: 3px 1px 2px #000!important;
 	transition:all 150ms ease;
 }
 .btn:hover{
-	color:#FFF!important;
+	color:#888!important;
 }
