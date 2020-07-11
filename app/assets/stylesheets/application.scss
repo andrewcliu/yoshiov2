@@ -27,7 +27,16 @@ body{
 .business-name,.title{
 	font-family: 'Seaweed Script', cursive;
 }
-
+a.router-link-active {
+  /*box-shadow:2px 1px 4px #fff!important;*/
+	text-shadow: 1px 2px 9px #FFF;
+  color:white!important;
+}
+li.router-link-active .btn {
+  /*box-shadow:2px 1px 4px #fff!important;*/
+	text-shadow: 1px 2px 9px #FFF;
+  color:white!important;
+}
 #appBody{
 	height:100vh;
 }
@@ -83,6 +92,43 @@ body{
 		font-size:2rem;
 	}
 }
+#mobileNav{
+	display: none!important;
+}
+#qr{
+	width:200px;position:absolute;top:0;right:0;margin:1rem 0 0 0;
+}
+@media only screen and (max-width: 430px) {
+	#customNav{
+		display: none!important;
+	}
+	.sidenav{
+		width:150px!important;
+		box-shadow: 10px 0 5px -2px #888;
+		background-image:asset-url('long_wood.png');
+		background-repeat: repeat;
+	}
+	#mobileNav{
+		display: block!important;
+		position: relative;
+
+	}
+	#homeBg .business-name {
+    font-size:4rem;
+  }
+  .rootNav{
+  	width:0!important;
+  }
+  #qr{
+  	width:200px;position:absolute;top:0;margin:1rem 0 0 0;
+  	right:auto!important;
+  }
+  .rootPadding{
+  	.title{
+  		font-size:2rem;
+  	}
+  }
+}
 
 #footer{
 	padding:25px;
@@ -125,10 +171,10 @@ body{
 	/*background-image:asset-url('yellow_wood.jpg');*/
 	background-color:#011!important;
 	background-repeat:repeat;
-	color:white!important;
+	color:#888!important;
 	box-shadow: 3px 1px 2px #000!important;
 	transition:all 150ms ease;
 }
 .btn:hover{
-	color:#888!important;
+	color:#FFF!important;
 }

@@ -1,7 +1,7 @@
 <template>
 	<div class="rootPadding">
 		<div class='row'>
-			<div class='col s10 m4 push-m4 woodBg'>
+			<div class='col s12 m4 push-m4 woodBg'>
 				<h3 class="title center-align">メニューに行く</h3>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <template>
 	<div class="rootPadding">
 		<div class="row">
-			<div class='col s10 m4 push-m4 woodBg'>
+			<div class='col s12 m4 push-m4 woodBg'>
 				<h3 class="title center-align">オンライン配信</h3>
 			</div>
 		</div>
@@ -32,10 +32,10 @@
 		</div><br>
 		<div class="row">
 			<h3 class="title">Contactless Delivery + Pick Up</h3>
-			<div class='col s4'>
+			<div class='col s12 m4'>
 				<img src="~images/contactless.png" class='url-images' style="width:100%;">
 			</div>
-			<div class='col s4'>
+			<div class='col s12 m4'>
 				<a href="https://www.foodieguide.us/foodieguide.us/yoshiosushi/">
 					<img src="~images/foodie.png" class='url-images' style='width:85%;'>
 				</a>
