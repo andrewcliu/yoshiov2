@@ -6,7 +6,7 @@
 			</div>
 		</div>
 
-	  <carousel :per-page="2" :mouse-drag="true" v-if="isMobile()">
+	  <carousel :per-page="2" :mouse-drag="true" v-if="!isMobile()">
 	    <slide v-for="(n,index) in 16" :key="n">
 	      <img :src="require('menu/' + n + '.png')"/>
 	    </slide>
