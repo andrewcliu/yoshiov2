@@ -10,7 +10,7 @@
 			  :cols="{default: 4, 1000: 3, 700: 2, 400: 1}"
 			  :gutter="{default: '30px', 700: '15px'}"
 			  >
-			  <div v-for="(n, index) in 82" :key="index">
+			  <div v-for="(n, index) in 85" :key="index">
 			  	<img :src="require('gallery/' + n + '.jpg')" style='width:100%;'/>
 			  </div>
 			</masonry>
