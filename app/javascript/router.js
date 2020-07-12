@@ -8,7 +8,6 @@ import Info from './views/Info.vue';
 import Delivery from './views/Delivery.vue';
 Vue.use(Router);
 
-Vue.component('loading',{ template: '<div>Loading!</div>'})
 
 const router = new Router({
 	mode:'history',
