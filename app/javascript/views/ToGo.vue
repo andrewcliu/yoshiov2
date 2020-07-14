@@ -6,7 +6,7 @@
 			</div>
 		</div>
 	  <carousel :per-page="1" :mouse-drag="true">
-	    <slide v-for="(n,index) in 2" :key="n">
+	    <slide v-for="(n,index) in 2" :key="n" v-viewer>
 	      <img :src="require('menu/togo' + n + '.png')"/>
 	    </slide>
 	  </carousel>
@@ -16,6 +16,8 @@
 <script>
 import Vue from 'vue/dist/vue.esm';
 import { Carousel, Slide } from 'vue-carousel';
+import Viewer from 'v-viewer'
+Vue.use(Viewer)
 
 export default {
   name:'ToGo',
