@@ -5,7 +5,7 @@
 				<h3 class="title center-align">メニューに行く</h3>
 			</div>
 		</div>
-	  <carousel :per-page="1" :mouse-drag="true">
+	  <carousel :per-page="1" :mouse-drag="true" :navigation-enabled="true" :loop="true" :autoplay-timeout=5000 :pagination-enabled="false">
 	    <slide v-for="(n,index) in 2" :key="n" v-viewer>
 	      <img :src="require('menu/togo' + n + '.png')"/>
 	    </slide>

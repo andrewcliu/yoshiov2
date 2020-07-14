@@ -5,13 +5,12 @@
 				<h3 class="title center-align">メニュー</h3>
 			</div>
 		</div>
-
-	  <carousel :per-page="2" :mouse-drag="true" v-if="!isMobile()">
+	  <carousel :per-page="2" :mouse-drag="true" :navigation-enabled="true" :loop="true" :autoplay-timeout=5000 :pagination-enabled="false" v-if="!isMobile()">
 	    <slide v-for="(n,index) in 16" :key="n" v-viewer>
 	      <img :src="require('menu/' + n + '.png')"/>
 	    </slide>
 	  </carousel>
-	  <carousel :per-page="1" :mouse-drag="true" v-else>
+	  <carousel :per-page="1" :mouse-drag="true" :navigation-enabled="true" :loop="true" :autoplay-timeout=5000 :pagination-enabled="false" v-else>
 	    <slide v-for="(n,index) in 16" :key="n" v-viewer>
 	      <img :src="require('menu/' + n + '.png')"/>
 	    </slide>
