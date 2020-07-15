@@ -20,7 +20,5 @@ document.addEventListener('turbolinks:load', () => {
   	router,
   	render: h => h(App),
   }).$mount('#app')
-
-
 })
 
